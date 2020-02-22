@@ -14,6 +14,7 @@ public class FormAttributeExtraction {
 		//try https://www.bridgelabz.com || http://x-hub.io
 		Document doc = Jsoup.connect("https://www.google.com/").get();
 		Element formElement = doc.getElementById("Form");
+		//we note get Form Content etc
 		System.out.println("formElement = "+formElement);
 		
 		Elements inputElements = formElement.getElementsByTag("input");
