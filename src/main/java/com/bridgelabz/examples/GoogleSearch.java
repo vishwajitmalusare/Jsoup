@@ -16,7 +16,6 @@ public class GoogleSearch {
 	private static Matcher matcher;
 	private static final String DOMAIN_NAME_PATTERN = 
 			"([a-zA-Z0-9]([a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9])?\\.)+[a-zA-Z]{2,15}";
-	//"([a-zA-Z0-9]([a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9])?\\.)+[a-zA-Z]{2,15}";
 	private static Pattern pattern = Pattern.compile(DOMAIN_NAME_PATTERN);
 	
 	public static String getDomainName(String url) {
