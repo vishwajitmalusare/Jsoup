@@ -14,7 +14,6 @@ public class UseDomMethods {
 	
 	Document doc = Jsoup.connect(url).get();
 	
-//	Element content = doc.getElementById("content");
 	Elements  links = doc.getElementsByTag("a");
 	for(Element link : links) {
 		String linkHref = link.attr("href");
