@@ -12,9 +12,9 @@ public class ParseBodyFragment {
 		Document document = Jsoup.parseBodyFragment(html);
 		Element body = document.body();
 		Elements paragraphs = body.getElementsByTag("p");
-		for(Element paragrapg : paragraphs) {
-			System.out.println(paragrapg.text());
-			System.out.println("Paragraph without text: ="+paragrapg);
+		for(Element paragraph : paragraphs) {
+			System.out.println(paragraph.text());
+			System.out.println("Paragraph without text: ="+paragraph);
 		}
 	}
 }
